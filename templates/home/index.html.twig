@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <span class="text-gradient"> {% block title %}{{ site_name }} - {% trans %}Bienvenue{% endtrans %}{% endblock %}</span>
+
+    <div class="card bg-blur">
+        <h1>Card with Gradient Background</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rci varius natoque penatibus et magnis dis parturient montes, nascetur
+        </p>
+    </div>
+
+    <h1 class="text-glow">text glow effect</h1>
+    <br />
+    <h1><span class="text-gradient">text gradient effect</span></h1>
+    <br />
+    <h1 class="text-glow">
+        <span class="text-gradient">text gradient</span>
+        with glow effect
+    </h1>
+{% endblock %}

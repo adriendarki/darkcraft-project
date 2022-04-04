@@ -1,19 +1,130 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
+<html class="h-100" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    {% if article is defined %}
+
+        <meta name="title" content="{ site_author }}">
+        <meta name="description" content="">
+        <meta name="keywords" content="{{ site_keywords }}">
+
+        <meta name="author" content="">
+        <meta name="generator" content="Symfony 5">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='dns-prefetch' href='//s.w.org' />
+        <link rel="alternate" type="application/rss+xml" title="DarkcraftProject &raquo; Flux" href="" />
+
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="768" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+    {% else %}
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="canonical" href="" />
+
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <meta name="author" content="{">
+        <meta name="generator" content="Symfony 5">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <link rel='dns-prefetch' href='//s.w.org' />
+        <link rel="alternate" type="application/rss+xml" title="Citizenz.info &raquo; Flux" href="" />
+
+        <!-- search engines -->
+        <meta name="description" content="">
+        <meta name="keywords" content="}">
+        <meta name="image" content="">
+
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:image:src" content="">
+
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="">
+        <meta name="og:description" content="">
+        <meta name="og:image" content="">
+        <meta name="og:url" content="">
+        <meta name="og:site_name" content="}">
+        <meta name="og:locale" content="fr_FR">
+        <meta name="og:type" content="website">
+    {% endif %}
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon.ico') }}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- Style -->
+
+    {% block javascripts %}
+    {% endblock %}
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+</head>
+
+<body class="d-flex flex-column h-100">
+
+{% block header %}
+
+{% endblock %}
+
+<main class="flex-shrink-0">
+    <div class="container my-4" data-aos="fade-up">
         {% block body %}{% endblock %}
-    </body>
+    </div>
+</main>
+
+{% block footer %}
+
+{% endblock %}
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="">
+
+</script>
+</body>
+
 </html>
