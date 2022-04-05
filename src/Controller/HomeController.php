@@ -17,24 +17,4 @@ class HomeController  extends AbstractController
         return $this->render('home/index.html.twig');
     }
 
-    /**
-     * @Route("/apropos", name="apropos")
-     */
-    public function apropos(): Response
-    {
-        return $this->render('home/apropos.html.twig', [
-            'current_menu' => 'A propos',
-        ]);
-    }
-
-    /**
-     * @Route("cgu", name="cgu")
-     */
-    public function cgu(): Response
-    {
-        return $this->render('home/cgu.html.twig', [
-            'current_menu' => 'Cgu',
-        ]);
-    }
-
 }
