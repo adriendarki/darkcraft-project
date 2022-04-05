@@ -1,13 +1,15 @@
 {% extends 'base.html.twig' %}
+{% block title %}{{ site_name }} - {% trans %}Attendre...{% endtrans %}{% endblock %}
 {% block body %}
-    <span class="text-gradient"> {% block title %}{{ site_name }} - {% trans %}Wait...{% endtrans %}{% endblock %}</span>
+    <span class="text-gradient"> {{ site_name }} - {% trans %}Attendre...{% endtrans %}</span>
 
     <h1 class="text-glow">
-        Hey ! This text is cool no ?
+        {% trans %} Hey ! This text is cool no ?
         <span class="text-gradient">probably nothing.</span>
-        <img  type="image/png" class="logo"  alt=""  src="{{ asset('images/wolf.png') }}">
-    </h1>
+        {% endtrans %}
 
+    </h1>
+    <img  type="image/png" class="logo"  alt="logo"  src="{{ asset('images/wolf.png') }}">
     <!-- RELAX DUDE ! wait for the best of best :)
 
 
