@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> {{ site_name }}</title>
     <!-- Style -->
     {% block javascripts %}
     {% endblock %}
@@ -30,7 +31,23 @@
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
 </head>
+
 <body class="d-flex flex-column h-100">
+    <div class="sl-nav text-right">
+       langue:
+        <ul>
+            <li><b></b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="triangle"></div>
+                <ul>
+                    <li><i class="sl-flag flag-fr"><div id="germany"></div></i> <span class="active"><a href="{{ path('default_language', {"locale": "fr"}) }}">French</a></span></li>
+                    <li><i class="sl-flag flag-usa"><div id="germany"></div></i> <span><a href="{{ path('default_language', {"locale": "en"}) }}">English</a></span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
 {% block header %}
 {% endblock %}
 

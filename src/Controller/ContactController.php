@@ -34,8 +34,8 @@ class ContactController extends AbstractController
 
             $message = (new Email())
                 ->from($contactFormData['email'])
-                ->to('contact@monblogamoi.xyz')
-                ->subject('Message depuis Darkcraftproject')
+                ->to('contact@darkcraftproject.fr')
+                ->subject('Message depuis Darkcraft Project')
                 ->html('<h3>Message envoyé depuis https://Darkcraftproject.fr</h3>'
                     . '<b>Expéditeur :</b> '
                     . $contactFormData['pseudo'] . '<br>'

@@ -2,7 +2,7 @@ twig:
     default_path: '%kernel.project_dir%/templates'
 
     globals:
-        site_name: Darkcraftproject
+        site_name: Darkcraft Project
         site_url: darkcraftproject
         site_url_full: https://darkcraftproject.fr
         site_email: contact@darkctafyproject.fr
