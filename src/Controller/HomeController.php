@@ -18,23 +18,17 @@ class HomeController  extends AbstractController
     }
 
     /**
-     * @Route("/apropos", name="apropos")
+     * @Route("/change-locale/{locale}", name="default_language")
+     * @param $locale
+     * @param Request $request
+     * @return Response
      */
-    public function apropos(): Response
+    public function changeLocale($locale, Request $request): Response
     {
-        return $this->render('home/apropos.html.twig', [
-            'current_menu' => 'A propos',
-        ]);
-    }
+        // On stocke la langue demandée dans la session
+        $request->getSession()->set('_locale', $locale);
 
-    /**
-     * @Route("cgu", name="cgu")
-     */
-    public function cgu(): Response
-    {
-        return $this->render('home/cgu.html.twig', [
-            'current_menu' => 'Cgu',
-        ]);
+        // On revient sur la page précédente
+        return $this->redirect($request->headers->get('referer'));
     }
-
 }
