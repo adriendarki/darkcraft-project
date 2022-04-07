@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="IFz8pPx" resname="Votre message a bien été envoyé ! Merci ! Je vous répondrai dès que possible.">
+        <source>Votre message a bien été envoyé ! Merci ! Je vous répondrai dès que possible.</source>
+        <target>__Votre message a bien été envoyé ! Merci ! Je vous répondrai dès que possible.</target>
+      </trans-unit>
+      <trans-unit id="fSmIyed" resname="erreur">
+        <source>erreur</source>
+        <target>__erreur</target>
+      </trans-unit>
+      <trans-unit id="ueG2YkL" resname="ERREUR">
+        <source>ERREUR</source>
+        <target>__ERREUR</target>
+      </trans-unit>
+      <trans-unit id=".J.ma97" resname="Cliquez sur le bouton ci-dessous">
+        <source>Cliquez sur le bouton ci-dessous</source>
+        <target>__Cliquez sur le bouton ci-dessous</target>
+      </trans-unit>
+      <trans-unit id="A0kfbRi" resname="Retour à la page d'accueil">
+        <source>Retour à la page d'accueil</source>
+        <target>__Retour à la page d'accueil</target>
+      </trans-unit>
+      <trans-unit id="RhSOJQ5" resname="Erreur">
+        <source>Erreur</source>
+        <target>__Erreur</target>
+      </trans-unit>
+      <trans-unit id="B_Qpu9l" resname="me contacter">
+        <source>me contacter</source>
+        <target>__me contacter</target>
+      </trans-unit>
+      <trans-unit id="oITk4fN" resname="Me contacter">
+        <source>Me contacter</source>
+        <target>__Me contacter</target>
+      </trans-unit>
+      <trans-unit id="8rh6pCz" resname="Chers lecteurs,">
+        <source>Chers lecteurs,</source>
+        <target>__Chers lecteurs,</target>
+      </trans-unit>
+      <trans-unit id=".jYtjjY" resname="Merci d'utiliser le formulaire ci-dessous pour me contacter. Je vous répondrai dès que possible.">
+        <source>Merci d'utiliser le formulaire ci-dessous pour me contacter. Je vous répondrai dès que possible.</source>
+        <target>__Merci d'utiliser le formulaire ci-dessous pour me contacter. Je vous répondrai dès que possible.</target>
+      </trans-unit>
+      <trans-unit id="BH9Ys5T" resname="Pseudo">
+        <source>Pseudo</source>
+        <target>__Pseudo</target>
+      </trans-unit>
+      <trans-unit id="JVDZYuU" resname="E-mail">
+        <source>E-mail</source>
+        <target>__E-mail</target>
+      </trans-unit>
+      <trans-unit id="QERVmkw" resname="Votre message">
+        <source>Votre message</source>
+        <target>__Votre message</target>
+      </trans-unit>
+      <trans-unit id="fZct4Q." resname="Merci de recopier le code antispam">
+        <source>Merci de recopier le code antispam</source>
+        <target>__Merci de recopier le code antispam</target>
+      </trans-unit>
+      <trans-unit id="d7zpI6e" resname="Envoyer le message">
+        <source>Envoyer le message</source>
+        <target>__Envoyer le message</target>
+      </trans-unit>
+      <trans-unit id="Rq05Fva" resname="Annuler">
+        <source>Annuler</source>
+        <target>__Annuler</target>
+      </trans-unit>
+      <trans-unit id="ZyFT62v" resname="A propos">
+        <source>A propos</source>
+        <target>__A propos</target>
+      </trans-unit>
+      <trans-unit id="IeAitoB" resname="CGU">
+        <source>CGU</source>
+        <target>__CGU</target>
+      </trans-unit>
+      <trans-unit id="7uB5eFJ" resname="Conditions Générales d'Utilisation (C.G.U.)">
+        <source>Conditions Générales d'Utilisation (C.G.U.)</source>
+        <target>__Conditions Générales d'Utilisation (C.G.U.)</target>
+      </trans-unit>
+      <trans-unit id="p8G3.is" resname="Attendre...">
+        <source>Attendre...</source>
+        <target>Attendre...</target>
+      </trans-unit>
+      <trans-unit id="32B3kYz" resname="Hey ! This text is cool no ?">
+        <source>Hey ! This text is cool no ?</source>
+        <target>__Hey ! This text is cool no ?</target>
+      </trans-unit>
+      <trans-unit id="Heyi5Bc" resname="Hé ! Ce texte est cool non ?">
+        <source>Hé ! Ce texte est cool non ?</source>
+        <target>Hé ! Ce texte est cool non ?</target>
+      </trans-unit>
+      <trans-unit id="OqkxsvI" resname="probablement rien.">
+        <source>probablement rien.</source>
+        <target>probablement rien.</target>
+      </trans-unit>
+      <trans-unit id="cblI3gP" resname="Langue:">
+        <source>Langue:</source>
+        <target>Langue:</target>
+      </trans-unit>
+      <trans-unit id="5JXVO5Z" resname="Français">
+        <source>Français</source>
+        <target>Français</target>
+      </trans-unit>
+      <trans-unit id="VTZ47tP" resname="Anglais">
+        <source>Anglais</source>
+        <target>Anglais</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
