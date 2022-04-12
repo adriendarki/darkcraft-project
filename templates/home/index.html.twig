@@ -3,15 +3,13 @@
 {% block body %}
 
     <h1 class="text-glow">
-        {% trans %} Bienvenue {% endtrans %}
+        {{ site_name }}
+        {% trans %} Hé ! Ce texte est cool non ?{% endtrans %}
         <span class="text-gradient">{% trans %}probablement rien.{% endtrans %}</span>
 
     </h1>
     <img  type="image/png" class="logo"  alt="logo_wolf"  src="{{ asset('images/wolf.png') }}">
-   <p>
-
-  <!--   -->
-   </p>
-
-
+    
+  <!-- RELAX DUDE ! wait for the best of best :)  -->
+    <p class="shining">{{ site_name }}</p>
 {% endblock %}
