@@ -1,17 +1,40 @@
 {% extends 'base.html.twig' %}
 {% block title %}{{ site_name }} - {% trans %}Attendre...{% endtrans %}{% endblock %}
 {% block body %}
-    <div class="container-fluid parallax">
-        <h1 class="text-glow">
-            {{ site_name }}
-            {% trans %} Hé ! Ce texte est cool non ?{% endtrans %}
-            <span class="text-gradient">{% trans %}probablement rien.{% endtrans %}</span>
+        <main class="px-3">
+            <h1 class="text-glow">
+                {{ site_name }}
+            </h1>
+            <img  type="image/png" class="logo"  alt="logo_wolf"  src="{{ asset('images/wolf.png') }}">
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+                <a href="#" class="btn btn-lg btn-dark fw-bold border-white ">Learn more</a>
+            </p>
+        </main>
 
-        </h1>
-        <img  type="image/png" class="logo"  alt="logo_wolf"  src="{{ asset('images/wolf.png') }}">
-
-        <!-- RELAX DUDE ! wait for the best of best :)  -->
-        <p class="shining">{{ site_name }}</p>
+    <div class="jumbotron jumbotron-fluid mt-5 py-4 ">
+        <div class="container bg-bluetrans">
+            <h2>Services</h2>
+            <p class="lead">Everything Bootstrap 4 has to offer an more</p>
+            <ul>
+                <li>All 30+ Bootstrap 4 elements available</li>
+                <li>25+ example layouts (including shop pages)</li>
+                <li>Specialized elements, e.g. map controls, mega menu, compact forms, header & card variants</li>
+                <li>Bootstrap utilities (color, grid, positioning, etc.)</li>
+                <li>Fully responsive (including beautiful mobile tables & image utilities)</li>
+                <li>Scifi design based on pure CSS</li>
+                <li>NO unnecessary image assets</li>
+                <li>Includes Font Awesome Free icon font</li>
+                <li>Easily customizable with modern tools (SCSS/SASS, npm, webpack)</li>
+                <li>Mixins for easily expanding complex styles</li>
+                <li>Supported in all modern browsers (no IE8-9)</li>
+            </ul>
+        </div>
     </div>
 
+
+        <!-- RELAX DUDE ! wait for the best of best :)  -->
+
+    <h2>{% trans %} L'entreprise dont vous etes l'acteur{% endtrans %}</h2>
+    <span class="text-gradient">{% trans %}probablement rien.{% endtrans %}</span>
 {% endblock %}
