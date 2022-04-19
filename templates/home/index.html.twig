@@ -1,40 +1,340 @@
 {% extends 'base.html.twig' %}
 {% block title %}{{ site_name }} - {% trans %}Attendre...{% endtrans %}{% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
 {% block body %}
+    <section>
         <main class="px-3">
             <h1 class="text-glow">
                 {{ site_name }}
             </h1>
             <img  type="image/png" class="logo"  alt="logo_wolf"  src="{{ asset('images/wolf.png') }}">
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h2 class="text-glow">{% trans %} L'entreprise dont vous etes l'acteur{% endtrans %}</h2>
             <p class="lead">
                 <a href="#" class="btn btn-lg btn-dark fw-bold border-white ">Learn more</a>
             </p>
         </main>
-
-    <div class="jumbotron jumbotron-fluid mt-5 py-4 ">
-        <div class="container bg-bluetrans">
-            <h2>Services</h2>
-            <p class="lead">Everything Bootstrap 4 has to offer an more</p>
-            <ul>
-                <li>All 30+ Bootstrap 4 elements available</li>
-                <li>25+ example layouts (including shop pages)</li>
-                <li>Specialized elements, e.g. map controls, mega menu, compact forms, header & card variants</li>
-                <li>Bootstrap utilities (color, grid, positioning, etc.)</li>
-                <li>Fully responsive (including beautiful mobile tables & image utilities)</li>
-                <li>Scifi design based on pure CSS</li>
-                <li>NO unnecessary image assets</li>
-                <li>Includes Font Awesome Free icon font</li>
-                <li>Easily customizable with modern tools (SCSS/SASS, npm, webpack)</li>
-                <li>Mixins for easily expanding complex styles</li>
-                <li>Supported in all modern browsers (no IE8-9)</li>
-            </ul>
+    </section>
+    <section class="wrapper">
+        <h2> Services</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Formation </small>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Formation numérique et gestion de projet </a></h4>
+                                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                            </div>
+                            <div class="card-footer">
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Thought Leadership</small>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Gouvernance/validateur blockchain</a></h4>
+                                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                            </div>
+                            <div class="card-footer">
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?computer,design');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Création applicatif</small>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Création web 2.0 ou web 3.0</a></h4>
+                                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                            </div>
+                            <div class="card-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-
+    </section>
+    <section class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Formation numérique </small>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Consultation numérique</a></h4>
+                                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                            </div>
+                            <div class="card-footer">
+                                <div class="media">
+                                </div>
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Thought Leadership</small>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Notre blockchain</a></h4>
+                                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                            </div>
+                            <div class="card-footer">
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="col-md-4"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?computer,design');">
+                        <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay d-flex flex-column">
+                            <div class="card-body">
+                                <small class="card-meta mb-2">Création applicatif</small>
+                                <h4 class="card-title mt-0 "><a class="text-white" herf="#">Notre studio de  jeux vidéo</a></h4>
+                                <small><i class="far fa-clock"></i> October 15, 2020</small>
+                            </div>
+                            <div class="card-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Content -->
+    <section>
+        <h2> Equipes</h2>
+        <div class="container">
+            <div class="row ">
+                <!-- Team Member 1 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow bg-bluetrans">
+                        <img src="{{ asset('images/adrienbouthet.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Adrien Bouthet</h5>
+                            <div class="card-text text-black-50">Chef de projet et devellopeur applicatif</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow bg-bluetrans">
+                        <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0 black">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow bg-bluetrans">
+                        <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow bg-bluetrans">
+                        <img src="https://source.unsplash.com/7u5mwbu7qLg/500x350" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Team Member</h5>
+                            <div class="card-text text-black-50">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="timeline">
+        <h2> Histoire de {{ site_name }}</h2>
+        <ul>
+            <li>
+                <div>
+                    <time>1687</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Laws of motion
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Newton</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1785</time>
+                    <div>
+                        <h1>Discovery</h1>
+                        <p>
+                            Law of electrostatic attraction
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1827</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Law of Electric Resistance
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>G.S Ohm</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1831</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Electromagnetic Induction
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Michael Faraday</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1867</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Dynamite
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Alfred Nobel</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1895</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            X Rays
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Roentgen</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1897</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Electron
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>J.J.Thomson</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1898</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Radium
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Madam Curie</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1900</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Quantum Theory
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Max Plank</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1905</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Principle of Relativity
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Albert Einstein</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1905</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Photo electric effect
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Albert Einstein</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <time>1942</time>
+                    <div class="discovery">
+                        <h1>Discovery</h1>
+                        <p>
+                            Nuclear Reactor
+                        </p>
+                    </div>
+                    <div class="scientist">
+                        <h1>Scientist</h1>
+                        <span>Anrico Fermi</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
         <!-- RELAX DUDE ! wait for the best of best :)  -->
 
-    <h2>{% trans %} L'entreprise dont vous etes l'acteur{% endtrans %}</h2>
-    <span class="text-gradient">{% trans %}probablement rien.{% endtrans %}</span>
+
 {% endblock %}
